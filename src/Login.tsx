@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {FC} from 'react';
+import {RouteComponentProps} from 'react-router-dom';
 
-const Login = () => {
+interface Props extends RouteComponentProps {};
+
+const Login:FC<Props> = () => {
   return (
     <div>
       login
