@@ -1,5 +1,4 @@
 import React, {FC} from 'react';
-import Header from '../Header';
 import {RouteComponentProps} from 'react-router-dom'
 
 const AuthLayout:FC<RouteComponentProps> = ({
@@ -7,7 +6,6 @@ const AuthLayout:FC<RouteComponentProps> = ({
 }) => {
   return (
     <div>
-      <Header/>
       <div style={{
         display: 'flex',
         margin: 'auto',

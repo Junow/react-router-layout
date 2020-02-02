@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import {RouteComponentProps} from 'react-router-dom'
+import Header from '../Header';
 
 const PublicLayout:FC<RouteComponentProps> = ({
   children,
