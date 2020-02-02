@@ -2,8 +2,9 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Switch, Redirect,RouteComponentProps } from "react-router-dom";
 // import Router from './Router';
 import 'antd/dist/antd.css';
-import Main from './Main';
-import Login from './Login';
+import Main from './pages/Main';
+import Login from './pages/Login';
+import MyPage from './pages/MyPage';
 
 import routes from './routes';
 
@@ -27,8 +28,14 @@ const pages:IPage[] = [
     exact: true,
     path: routes.login,
     component: Login,
-    layout: AuthLayout,
-  }
+    layout: PublicLayout,
+  },
+  {
+    exact: true,
+    path: routes.myPage,
+    component: MyPage,
+    layout: PublicLayout,
+  },
 ];
 
 interface Props {};
