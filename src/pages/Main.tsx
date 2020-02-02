@@ -6,8 +6,7 @@ interface Props extends RouteComponentProps {};
 const Main:FC<Props> = ({history}) => {
   return (
     <div>
-      <a onClick={history.goBack}>이전</a>
-      <Link to='/login'>로그인</Link>
+      this is main page
     </div>
   )
 };
