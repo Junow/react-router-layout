@@ -14,7 +14,6 @@ const PublicLayout:FC<Props> = ({
   return (
     <Layout>
       <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
-      <div className="logo" />
       <Menu
         theme="dark"
         mode="horizontal"
@@ -35,7 +34,10 @@ const PublicLayout:FC<Props> = ({
         </Menu.Item>
       </Menu>
     </Header>
-      <Content>
+      <Content style={{
+        height: '100vh',
+        marginTop: '64px',
+      }}>
         {children}
       </Content>
     </Layout>
